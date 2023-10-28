@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>coming soon....</h1>
+    <a href="/">Go to home Page</a>
+    <hr />
+    <form action="/" method="get" enctype="multipart/form-data">
+      <!-- action keeping only / means its submitting to itself to website
+       method  means how the server interacting post encryptes while sending data and get sends in the form of link adding to the link
+      get is used for non-sensitive data to be sent
+      while post is used for sensitive data to be sent
+      enctype sends data and should use multipart/form-data to send attachments as well.
+      -->
+      <p>
+        <label for="">First Name</label>
+        <input
+          type="text"
+          required
+          minlength="3"
+          maxlength="10"
+          name="firstname"
+        />
+
+        <!-- required defines it must be filled 
+        name attribute should be there to submit the data -->
+      </p>
+      <p>
+        <label for="">Last Name</label>
+        <input type="text" name="lname" />
+      </p>
+      <p>
+        <label for="">Phone:</label>
+        <input type="number" />
+      </p>
+      <p>
+        <label for="">age:</label>
+        <input type="number" min="3" max="65" />
+      </p>
+      <p>
+        <label for="">Email:</label>
+        <input type="email" />
+      </p>
+      <p>
+        <label for="">Password</label>
+        <input type="password" />
+      </p>
+      <p>
+        <label for="">LinkeDin</label>
+        <input type="link" />
+      </p>
+      <p>
+        <label for="">Date OF Birth</label>
+        <input type="date" />
+        <input type="time" />
+      </p>
+
+      <p>
+        <label for="">Message</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="M" /><label for="M">M</label>
+        <input type="radio" name="gender" id="F" /><label for="F">F</label>
+        <input type="radio" name="gender" id="NM" /><label for="NM">NM</label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="" id="" />
+        <label for="">I agree the terms and conditions</label>
+      </p>
+
+      <p>
+        <label for="">Fruits</label>
+        <select name="" id="" multiple>
+          <option value="">select one</option>
+          <option value="Mango">Mango</option>
+          <option value="Banana">Banana</option>
+          <option value="Apple">Apple</option>
+          <!-- value is important in here because it sends that data kept in the
+          value to the server not what is showing up in between option -->
+        </select>
+      </p>
+
+      <p>
+        <input type="file" accept="image/*" multiple />
+        <!-- accept defines what can be selected and what not and multiple helps in selecting multiple of image at once -->
+      </p>
+
+      <p>
+        <input type="submit" />
+        <button>Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
